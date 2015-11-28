@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        cameraObject.transform.position = new Vector3(PositionOffset.x, PositionOffset.y, cameraObject.transform.position.z);
+        //cameraObject.transform.position = new Vector3(PositionOffset.x, PositionOffset.y, cameraObject.transform.position.z);
         /*cameraObject.transform.rotation = new Quaternion(cameraObject.transform.rotation.x,
                                                 cameraObject.transform.rotation.y,
                                                 cameraObject.transform.rotation.z + (int)RotationOffset,

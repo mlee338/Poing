@@ -6,13 +6,16 @@ public class GPSManager : MonoBehaviour {
     [HideInInspector]
     public static GPSManager singleton;
 
-    private float originalLocationX = 0;
-    private float originalLocationY = 0;
+    [HideInInspector]
+    public float originalLocationX = 0;
+    [HideInInspector]
+    public float originalLocationY = 0;
     [HideInInspector]
     public float instantLocationX = 0;
     [HideInInspector]
     public float instantLocationY = 0;
-    private float modifier = 10000;
+    [HideInInspector]
+    public float modifier = 10000;
 
     void Awake()
     {

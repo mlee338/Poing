@@ -28,6 +28,10 @@ public class PaddleController : NetworkBehaviour {
                 newPosition = transform.position + newPosition;
                 transform.position = newPosition;
             }*/
+            float deltaX = (GPSManager.singleton.instantLocationX - GPSManager.singleton.originalLocationX) * GPSManager.singleton.modifier;
+            float deltaY = (GPSManager.singleton.instantLocationY - GPSManager.singleton.originalLocationY) * GPSManager.singleton.modifier;
+
+            transform.position = new Vector3(20 + deltaX, -110 + deltaY, transform.position.z);
         }
 	}
 }
