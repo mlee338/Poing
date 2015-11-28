@@ -44,6 +44,7 @@ public class GPSManager : MonoBehaviour {
         if (maxWait < 1)
         {
             Debug.LogError("Timed out");
+            PlayerCanvasManager.singleton.debugWindow.text = "Timed Out";
             yield break;
         }
 
@@ -51,12 +52,14 @@ public class GPSManager : MonoBehaviour {
         if (Input.location.status == LocationServiceStatus.Failed)
         {
             Debug.LogError("Unable to determine device location");
+            PlayerCanvasManager.singleton.debugWindow.text = "Unable to determine device location";
             yield break;
         }
         else
         {
             // Access granted and location value could be retrieved
             Debug.Log("Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp);
+            PlayerCanvasManager.singleton.debugWindow.text = "Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp;
             originalLocationX = Input.location.lastData.latitude;
             originalLocationY = Input.location.lastData.longitude;
         }
