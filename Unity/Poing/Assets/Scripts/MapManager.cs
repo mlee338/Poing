@@ -3,7 +3,10 @@ using System.Collections;
 
 public class MapManager : MonoBehaviour {
 
+    [HideInInspector]
     public MapManager singleton;
+
+    public Vector2 ArenaCentre;
 
     void Awake()
     {
