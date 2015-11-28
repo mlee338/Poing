@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Networking;
 using System.Collections;
 
@@ -7,11 +8,8 @@ public class PaddleController : NetworkBehaviour {
     [SerializeField]
     private int paddleSpeed = 10;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+
+
     // Start the gps service
     override public void OnStartLocalPlayer()
     {

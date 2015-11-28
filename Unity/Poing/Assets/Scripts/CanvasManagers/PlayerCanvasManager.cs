@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerCanvasManager : MonoBehaviour {
 
     [HideInInspector]
-    public PlayerCanvasManager singleton;
+    public static PlayerCanvasManager singleton;
+    public Text debugWindow;
 
     void Awake()
     {
