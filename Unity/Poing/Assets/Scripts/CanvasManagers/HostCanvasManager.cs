@@ -3,6 +3,7 @@ using System.Collections;
 
 public class HostCanvasManager : MonoBehaviour {
 
+    [HideInInspector]
     public HostCanvasManager singleton;
 
     void Awake()

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameSessionManager : MonoBehaviour {
 
+    [HideInInspector]
     public GameSessionManager singleton;
 
     void Awake()

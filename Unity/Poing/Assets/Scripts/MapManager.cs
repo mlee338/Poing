@@ -6,7 +6,8 @@ public class MapManager : MonoBehaviour {
     [HideInInspector]
     public MapManager singleton;
 
-    public Vector2 ArenaCentre;
+    public Vector2 ArenaCentre = new Vector2((float) -27.477721, (float) 153.028414);
+    public Vector2 RotationOffset;
 
     void Awake()
     {

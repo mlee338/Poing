@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CommonCanvasManager : MonoBehaviour {
 
+    [HideInInspector]
     public CommonCanvasManager singleton;
 
     void Awake ()
@@ -11,8 +12,7 @@ public class CommonCanvasManager : MonoBehaviour {
         {
             Debug.LogError("CommonCanvasManager singleton already exists");
         }
-        singleton = this;
-        
+        singleton = this;   
     }
 
 	// Use this for initialization

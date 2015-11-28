@@ -15,8 +15,7 @@ public class PaddleController : NetworkBehaviour {
     // Start the gps service
     override public void OnStartLocalPlayer()
     {
-        // sync the transform position
-        
+           
     }
 
 	// Update is called once per frame
