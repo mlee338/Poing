@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class GameNetworkManager : MonoBehaviour {
+public class GameNetworkManager : NetworkManager {
+
+
 
 	// Use this for initialization
 	void Start () {

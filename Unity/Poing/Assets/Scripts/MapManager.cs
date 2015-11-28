@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameSessionManager : MonoBehaviour {
+public class MapManager : MonoBehaviour {
 
-    public GameSessionManager singleton;
+    public MapManager singleton;
 
     void Awake()
     {
         if (singleton != null)
         {
-            Debug.LogError("GameSessionManager singleton already exists");
+            Debug.LogError("MapManager singleton already exists");
         }
         singleton = this;
     }

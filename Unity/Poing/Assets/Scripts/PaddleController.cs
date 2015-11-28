@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class HostCanvasManager : MonoBehaviour {
+public class PaddleController : NetworkBehaviour { 
+
+
 
 	// Use this for initialization
 	void Start () {

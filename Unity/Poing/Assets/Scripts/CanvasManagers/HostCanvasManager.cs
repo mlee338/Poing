@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameSessionManager : MonoBehaviour {
+public class HostCanvasManager : MonoBehaviour {
 
-    public GameSessionManager singleton;
+    public HostCanvasManager singleton;
 
     void Awake()
     {
         if (singleton != null)
         {
-            Debug.LogError("GameSessionManager singleton already exists");
+            Debug.LogError("HostCanvasManager singleton already exists");
         }
         singleton = this;
     }
