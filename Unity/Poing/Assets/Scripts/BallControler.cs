@@ -45,6 +45,6 @@ public class BallControler : MonoBehaviour {
 
     void EndRound (BoxCollider2D goalLine) {
         Destroy(ball);
-        GameObject newBall = GameObject.Instantiate(ball) as GameObject;
+        //GameObject newBall = GameObject.Instantiate(ball) as GameObject;
     }
 }
