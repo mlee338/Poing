@@ -23,20 +23,20 @@ public class PaddleController : NetworkBehaviour {
 	void Update () {
 	    if (base.isLocalPlayer)
         {
-            float moveVertical = Input.GetAxis("Vertical");
+       /*     float moveVertical = Input.GetAxis("Vertical");
             float moveHorizontal = Input.GetAxis("Horizontal");
             if (moveVertical != 0 || moveHorizontal != 0)
             {
                 transform.position = new Vector3(transform.position.x + moveHorizontal * 10 * Time.deltaTime, transform.position.y + moveVertical*10*Time.deltaTime, transform.position.z);
-            }
+            }*/
 
-#if UNITY_ANDROID
+//#if UNITY_ANDROID
 
-            /*float deltaX = (GPSManager.singleton.instantLocationX - GPSManager.singleton.originalLocationX) * GPSManager.singleton.modifier;
+            float deltaX = (GPSManager.singleton.instantLocationX - GPSManager.singleton.originalLocationX) * GPSManager.singleton.modifier;
             float deltaY = (GPSManager.singleton.instantLocationY - GPSManager.singleton.originalLocationY) * GPSManager.singleton.modifier;
 
-            transform.position = new Vector3(20 + deltaX, -110 + deltaY, transform.position.z);*/
-#endif
+            transform.position = new Vector3(20 + deltaX, -110 + deltaY, transform.position.z);
+//#endif
         }
 	}
 }
