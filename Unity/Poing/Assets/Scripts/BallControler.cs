@@ -22,15 +22,14 @@ public class BallControler : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (GetComponent<CircleCollider2D>().IsTouching(player1Collider)) {
+            xPower = Random.Range(-1.0f, 1.0f);
             yPower = 1.0f;
-        }
-        if (GetComponent<CircleCollider2D>().IsTouching(player2Collider)) {
+        } else if (GetComponent<CircleCollider2D>().IsTouching(player2Collider)) {
+            xPower = Random.Range(-1.0f, 1.0f);
             yPower = -1.0f;
-        }
-        if (transform.position.x > 2.47f) {
+        } else if (transform.position.x > 2.47f) {
             xPower = Random.Range(-1.0f, -0.2f);
-        }
-        if (transform.position.x < 2.47f) {
+        } else if (transform.position.x < 2.47f) {
             xPower = Random.Range(0.2f, 1.0f);
         }
         if (GetComponent<CircleCollider2D>().IsTouching(goal1Collider)) {
