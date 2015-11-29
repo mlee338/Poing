@@ -16,6 +16,23 @@ public class GameNetworkManager : NetworkManager {
 	
 	}
 
+    public override void OnClientConnect(NetworkConnection conn)
+    {
+        base.OnClientConnect(conn);
+        //conn.isReady = true;
+        //ClientScene.Ready(conn);
+
+        
+    }
+
+    public override void OnClientSceneChanged(NetworkConnection conn)
+    {
+        base.OnClientSceneChanged(conn);
+
+        //conn.isReady = true;
+        //ClientScene.Ready(conn);
+        Debug.LogError("Client Ready " + conn.isReady);
+    }
 
     /*public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
     {
